@@ -3,3 +3,5 @@
 ____
 
 npm install -g @angular/cli
+
+ng new nomeDoProjeto
