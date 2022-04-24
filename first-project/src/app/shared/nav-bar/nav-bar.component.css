@@ -68,7 +68,7 @@
 @media (min-width: 992px) {
     .navbar.bg-dark {
         background-color: transparent !important;
-        background-image: url('assets/images/header_gradient.png');
+        background-image: url('../../../assets/images/header_gradient.png');
         background-repeat: repeat-x;
     }
 

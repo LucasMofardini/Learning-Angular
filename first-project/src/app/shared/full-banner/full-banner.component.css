@@ -17,6 +17,12 @@
     min-width: 100px;
 }
 
+@media (min-width: 576px) {
+    .full-banner {
+        min-height: 256px;
+    }
+}
+
 @media (min-width: 768px) {
     .full-banner .d-flex {
         align-items: center;
@@ -24,8 +30,6 @@
 }
 
 @media (min-width: 992px) {
-
-
     .full-banner {
         min-height: 50vh;
     }
@@ -33,13 +37,5 @@
     .full-banner p {
         color: #999898;
         max-width: 50vw;
-    }
-
-
-}
-
-@media (min-width: 576px) {
-    .full-banner {
-        min-height: 256px;
     }
 }
