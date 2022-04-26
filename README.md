@@ -17,3 +17,5 @@ ng serve --open
 _____
 
 ## TypeScript
+
+É uma linguagem que tipa o JavaScript
