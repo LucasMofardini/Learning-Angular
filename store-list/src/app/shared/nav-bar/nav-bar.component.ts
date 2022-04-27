@@ -8,13 +8,17 @@ import { faBars, } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
+
   @Input() logo : string;
   faBars = faBars;
+
+  ativo:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
   toggleModal(){
-    
+     this.ativo = !this.ativo;
   }
 }

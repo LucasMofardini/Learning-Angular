@@ -21,11 +21,11 @@
                     <img [src]="logo" alt="Logo" class="logo-carrinho" />
                 </a>
             </div>
-            <div class="container-itens">
+            <div class="container-item ">
                 <div class="box-barra" (click)="toggleModal()">
                     <fa-icon [icon]="faBars"></fa-icon>
                 </div>
-                <div class="box-itens">
+                <div class="box-itens" [ngClass]="{'ativo':ativo}">
                     <ul>
                         <li>
                             <span>Carrinho</span>
