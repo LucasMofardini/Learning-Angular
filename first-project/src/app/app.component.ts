@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  menuOpened = false;
+
   listTitles = [
     {
       trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
@@ -37,11 +39,26 @@ export class AppComponent {
     , {
       trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
       cover: 'assets/images/guardios-da-galaxia.jpg',
-      name: 'Guardiões da Galaxia 3',
+      name: 'Guardiões da Galaxia 4',
+      relevance: 80,
+      age: 18,
+      parts: 2,
+      categories: ['Épico', 'Filme de fantasia', 'Viagem no espaço']
+    } , {
+      trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
+      cover: 'assets/images/guardios-da-galaxia.jpg',
+      name: 'Guardiões da Galaxia 5',
       relevance: 80,
       age: 18,
       parts: 2,
       categories: ['Épico', 'Filme de fantasia', 'Viagem no espaço']
     }
   ];
+
+  setMenuState(state: boolean) {
+    this.menuOpened = state;
+  }
+  fechaMenu(){
+    this.menuOpened = false;
+  }
 }

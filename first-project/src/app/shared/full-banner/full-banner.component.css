@@ -1,7 +1,6 @@
 .full-banner {
     background-image: url('../../../assets/images/full-banner.jpg');
     min-height: 120px;
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -33,7 +32,6 @@
     .full-banner {
         min-height: 50vh;
     }
-
     .full-banner p {
         color: #999898;
         max-width: 50vw;
