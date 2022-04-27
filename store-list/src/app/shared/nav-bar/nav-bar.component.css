@@ -16,6 +16,7 @@
 
 .navbar.menu .logo-carrinho {
     height: 50px;
+    user-select: none;
 }
 
 .navbar.menu a {
