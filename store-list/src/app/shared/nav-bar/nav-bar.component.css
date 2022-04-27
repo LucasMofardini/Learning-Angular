@@ -1,0 +1,49 @@
+.navbar.menu {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(rgb(226, 225, 225), var(--color4));
+    /* background-color: var(--color3); */
+}
+
+.navbar.menu .container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.navbar.menu .logo-carrinho {
+    height: 50px;
+}
+
+.navbar.menu a {
+    text-decoration: none;
+}
+
+.navbar.menu .container-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* width: 100%; */
+    /* background-color: aqua; */
+}
+
+.navbar.menu .container-item a {
+    margin: 0 15px;
+    padding: 5px 10px;
+    /* border-bottom: 2px solid var(--color1); */
+    /* background: var(--color1); */
+    transition: 0.2s ease-in;
+}
+
+.navbar.menu .container-item a:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.navbar.menu a {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    color: var(--color1);
+}
