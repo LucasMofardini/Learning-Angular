@@ -1,0 +1,134 @@
+.section-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+    font-family: 'IBM Plex Mono';
+}
+
+.section-lists h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.section-lists h1:before {
+    content: '';
+    width: 5px;
+    height: 20px;
+    background-color: var(--color2);
+    margin-right: 10px;
+}
+
+.section-lists .container-lists {
+    margin-top: 40px;
+}
+
+.section-lists .listas-produtos {
+    margin-top: 60px;
+    width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background: rgba(240, 240, 240, 0.8); */
+    border-radius: 10px;
+}
+
+.section-lists .produto {
+    width: 300px;
+    height: 450px;
+    margin: 15px 10px;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: rgb(212, 211, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-lists .nome {
+    width: 100%;
+    /* text-align: center; */
+    font-size: 20px;
+    margin-top: 15px;
+    /* background-color: var(--color4); */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #333;
+}
+
+.section-lists .box-img {
+    padding: 15px 0;
+    background-color: var(--color4);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.section-lists .box-img img {
+    height: 150px;
+}
+
+.section-lists .box-infos {
+    max-width: 100%;
+}
+
+.section-lists .box-infos>p {
+    margin: 15px 10px;
+}
+
+.section-lists .box-infos .preco span {
+    text-align: left;
+    font-weight: 400;
+    color: #333;
+}
+
+.section-lists .box-infos .opcoes_pagamento span {
+    font-size: 14px;
+}
+
+.section-lists .box-infos .opcoes_pagamento .vezes_parcelado {
+    color: #00a650;
+}
+
+.section-lists .box-infos .opcoes_pagamento .preco {
+    color: #00a650;
+    margin: 0 10px;
+}
+
+.section-lists .box-infos .opcoes_pagamento .juros {
+    color: #00a650;
+}
+
+.section-lists .box-infos .preco {
+    /* background-color: var(--color1); */
+    text-align: left;
+    padding: 5.5px;
+    border-radius: 15px;
+    width: auto;
+    text-align: left;
+    font-size: 20px;
+}
+
+.section-lists .box-comprar {
+    width: 100%;
+}
+
+.section-lists .box-comprar button {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'IBM Plex Mono';
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
