@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ap-photo',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photo.component.css']
 })
 export class PhotoComponent implements OnInit {
-  description = 'Leao';
-  url="https://www.petz.com.br/blog/wp-content/uploads/2022/01/curiosidades-sobre-leao2.jpg";
+  // Recebe  parametro de fora
+
+  @Input() description = '';
+  @Input()  url="";
+
   constructor() { }
 
   ngOnInit(): void {
