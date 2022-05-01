@@ -1,0 +1,23 @@
+<div class="produto">
+    <div class="box-produto">
+        <div class="box-img">
+            <div>
+                <img [src]="produto.url" alt="" />
+            </div>
+        </div>
+        <div class="box-infos">
+            <p class="preco"><span>R$</span><span> {{ produto.preco }}</span></p>
+            <p class="opcoes_pagamento">
+                <span class="vezes_parcelado">{{ produto.vezes_parceladas }}x</span>
+                <span class="preco">R${{ produto.preco_parcela }} </span>
+                <span class="juros">{{ produto.juros }}</span>
+            </p>
+            <p class="nome">
+                {{ produto.nome }}
+            </p>
+        </div>
+    </div>
+    <div class="box-comprar">
+        <button>Adicionar ao carrinho</button>
+    </div>
+</div>

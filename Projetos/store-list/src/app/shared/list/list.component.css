@@ -29,118 +29,21 @@
 
 .section-lists .listas-produtos {
     margin-top: 60px;
-    width: 980px;
+    max-width: 980px;
     display: flex;
     flex-wrap: wrap;
     /* background: rgba(240, 240, 240, 0.8); */
     border-radius: 10px;
+    justify-content: space-evenly;
 }
 
-.section-lists .produto {
-    width: 300px;
-    height: 450px;
-    margin: 15px 10px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(208, 208, 208, 0.53);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.6px);
-    -webkit-backdrop-filter: blur(2.6px);
-    border: 1px solid rgba(208, 208, 208, 0.08);
-    transition: 0.2s ease-in;
+.section-lists .listas-produtos>app-produto {
+    flex: 1 0 250px;
+    max-width: 300px;
 }
 
-.section-lists .produto:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-}
-
-.section-lists .produto .box-produto {
-    width: 100%;
-}
-
-.section-lists .nome {
-    width: 100%;
-    /* text-align: center; */
-    font-size: 20px;
-    margin-top: 15px;
-    /* background-color: var(--color4); */
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    color: #333;
-}
-
-.section-lists .box-img {
-    padding: 15px 0;
-    background-color: var(--color4);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.section-lists .box-img img {
-    height: 150px;
-}
-
-.section-lists .box-infos {
-    max-width: 100%;
-}
-
-.section-lists .box-infos>p {
-    margin: 15px 10px;
-}
-
-.section-lists .box-infos .preco span {
-    text-align: left;
-    font-weight: 400;
-    color: #333;
-}
-
-.section-lists .box-infos .opcoes_pagamento span {
-    font-size: 14px;
-}
-
-.section-lists .box-infos .opcoes_pagamento .vezes_parcelado {
-    color: #00a650;
-}
-
-.section-lists .box-infos .opcoes_pagamento .preco {
-    color: #00a650;
-    margin: 0 10px;
-}
-
-.section-lists .box-infos .opcoes_pagamento .juros {
-    color: #00a650;
-}
-
-.section-lists .box-infos .preco {
-    /* background-color: var(--color1); */
-    text-align: left;
-    border-radius: 15px;
-    width: auto;
-    text-align: left;
-    font-size: 20px;
-}
-
-.section-lists .box-comprar {
-    width: 100%;
-}
-
-.section-lists .box-comprar button {
-    width: 100%;
-    background-color: transparent;
-    padding: 10px 0;
-    border: 1px solid black;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-family: 'IBM Plex Mono';
-    background-color: black;
-    color: white;
-    cursor: pointer;
+@media (max-width:520px) {
+    .section-lists .listas-produtos>app-produto {
+        max-width: 100%;
+    }
 }
