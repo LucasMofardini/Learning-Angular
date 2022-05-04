@@ -7,11 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  photos: Object[] = [];
+  photos: Array<any> = [];
 
   constructor(http:HttpClient) {
     http
-    .get<Object[]>('http://localhost:3000/flavio/photos')
-    .subscribe(photos => this.photos = photos);
+    .get<Array<any>>('http://localhost:3000/flavio/photos')
+    .subscribe((photos) => {
+      this.photos = photos;
+      console.log(this.photos[0]);
+    });
   }
 }
