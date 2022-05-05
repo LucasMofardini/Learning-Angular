@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { PhotosModule } from './photos/photos.moule';
+import { PhotoListComponent } from './photos/photo-list/photo-list.component';
 
 
 
