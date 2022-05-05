@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { PhotosModule } from './photos/photos.moule';
-import { PhotoListComponent } from './photos/photo-list/photo-list.component';
+import { AppRoutingModel } from './app.routing.module';
+import { ErrorsModule } from './errors/errors.module';
 
 
 
@@ -13,7 +14,9 @@ import { PhotoListComponent } from './photos/photo-list/photo-list.component';
   ],
   imports: [
     BrowserModule,
-    PhotosModule
+    PhotosModule,
+    AppRoutingModel,
+    ErrorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
