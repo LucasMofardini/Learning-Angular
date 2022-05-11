@@ -25,10 +25,10 @@ ng gerenate component caminho/NomeDoComponent
 ## TypeScript
 
 ~~~typescript
-//É uma linguagem que tipa o JavaScript
+// É uma linguagem que tipa o JavaScript
 
-Para a tipagem de algo é necessário colocar o ":"
-Se voce nao colocar tipo na propriedade, ela será do tipo any.
-O ideal sempre tipar as propriedades, parametros de métodos...
+// Para a tipagem de algo é necessário colocar o ":"
+// Se voce nao colocar tipo na propriedade, ela será do tipo any.
+// ideal sempre tipar as propriedades, parametros de métodos, retorno de métodos, etc.
 
 ~~~
