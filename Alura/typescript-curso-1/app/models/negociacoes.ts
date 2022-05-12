@@ -4,9 +4,11 @@ export class Negociacoes{
     private negociacoes: Array<Negociacao> = [];
 
     adiciona(negociacao:Negociacao):void{
+
         this.negociacoes.push(negociacao);   
     }
-    mostra():Array<Negociacao>{
+    lista(): ReadonlyArray<Negociacao>{
+        // Para encapsular o this.negociação
         return this.negociacoes;
     }
 }
