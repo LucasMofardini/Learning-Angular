@@ -8,24 +8,23 @@ import { PhotoFormComponent } from "./photo-form/photo-form.component";
 import { PhotosComponent } from "./photo-list/photos/photos.component";
 import { filterByDescription } from "./photo-list/filter-by-description.pipe";
 import { LoadButtonComponent } from './photo-list/load-button/load-button.component';
+import { PhotoModule } from "./photo/photo.module";
+import { PhotoFormModule } from "./photo-form/photo-form.module";
+import { PhotoListModule } from "./photo-list/photo-list.module";
 
 @NgModule({
     // Está privado dentro do modulo
     // Mas são visiveis para os components declarados aqui
-    declarations: [
-        PhotoComponent,
-        PhotoListComponent,
-        PhotoFormComponent,
-        PhotosComponent,
-        filterByDescription,
-        LoadButtonComponent
-    ],
+    // declarations: [
+        
+    // ],
     // Está acessivel por quem acessar o módulo
     // exports: [
     // ],
     imports:[
-        HttpClientModule,
-        CommonModule
+        PhotoModule,
+        PhotoFormModule,
+        PhotoListModule,
     ]
 
 })
