@@ -4,7 +4,13 @@
     private escapar = false;
 
     constructor(seletor: string, escapar?: boolean){
-        this.elemento = document.querySelector(seletor);
+        const elemento = document.querySelector(seletor);
+        if(elemento){
+            this.elemento = elemento as HTMLElement;
+        }else{
+            throw Error('Erro ao capturar o elemento, Não existe no DOM');
+        }
+        
         if(escapar){
             this.escapar = escapar;
         }
