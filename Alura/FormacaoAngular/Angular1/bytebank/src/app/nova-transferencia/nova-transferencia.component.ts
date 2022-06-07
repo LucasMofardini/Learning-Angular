@@ -15,8 +15,9 @@ export class NovaTransferenciaComponent{
     transferir(){
         this.aoTranferir.emit({
             valor: this.valor, 
-            destino :this.destino});
-
+            destino :this.destino,
+            data: new Date()
+        });
         this.limparCampos();
     }
 
